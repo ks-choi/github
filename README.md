@@ -32,5 +32,5 @@ windows 기준으로 작성합니다.
 
 ### .md(mark down)파일 마크업 관련
 
-    1. [tchap markdown-cheatsheet](https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md)
-    2. [나무위키](https://namu.wiki/w/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4)
+ 1. [tchap markdown-cheatsheet](https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md)
+ 2. [나무위키](https://namu.wiki/w/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4)
