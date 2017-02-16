@@ -23,3 +23,14 @@ windows 기준으로 작성합니다.
 **Sign up for GitHub** 를 누르면 Step.2 로 이동되는데 지불관련 내용입니다. 일정 금액을 지불하면 저장소를 비공개로 설정가능합니다.  
 마지막 스텝에서는 Github 사용계획 등의 정보를 입력받는 화면이니 적절히 선택하고 Submit을 누르면됩니다.  
 그럼 입력했던 이메일로 이메일주소 확인 링크가 포함된 메일이 발송되니 링크를 선택하여 최종 완료 단계를 마치게 됩니다.
+
+## Github Repo 관리
+
+준비중..
+
+## 기타
+
+### .md(mark down)파일 마크업 관련
+
+    1. [tchap markdown-cheatsheet](https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md)
+    2. [나무위키](https://namu.wiki/w/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4)
