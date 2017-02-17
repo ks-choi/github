@@ -75,9 +75,9 @@ windows 기준으로 작성합니다.
     예) git commit -m "first commit"
 
     // Remote Repository에 업로드
-    git push origin global
+    git push origin master
 
-### Git CLI 정리
+## Git CLI 정리
 
     // 프로젝트를 처음 생성했을 때 초기화
     git init
@@ -121,7 +121,11 @@ windows 기준으로 작성합니다.
     git checkout master // 마스터로 이동
     git merge <브랜치명> // master와 브랜치 합침
 
-### .md(mark down)파일 마크업 관련
+## .md(mark down)파일 마크업 관련
 
  1. [tchap markdown-cheatsheet](https://github.com/tchapi/markdown-cheatsheet/blob/master/README.md)
  2. [나무위키](https://namu.wiki/w/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4)
+
+## 참고
+
+ 1. [git-scm](https://git-scm.com/book/ko/v2) : Git 관련 전체 설명
