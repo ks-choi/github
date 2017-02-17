@@ -19,16 +19,80 @@ windows 기준으로 작성합니다.
 ## Github 가입
 
 [Github](https://github.com/) 로 이동하면 첫 화면에 바로 입력란이 나오는데 회원가입 정보를 입력하는 곳입니다.  
-제일 위부터 이름, 이메일, 암호인데 이름은 **https://github.com/[이름]/** 형식으로 URL이 부여되어 영문자 소/대와 숫자, 하이픈(-)만 입력할 수 있습니다.  
-**Sign up for GitHub** 를 누르면 Step.2 로 이동되는데 지불관련 내용입니다. 일정 금액을 지불하면 저장소를 비공개로 설정가능합니다.  
+제일 위부터 이름, 이메일, 암호인데 이름은 **https://github.com/[이름]/[저장소명]** 형식으로 URL이 부여되어 영문자 소/대와 숫자, 하이픈(-)만 입력할 수 있습니다.  
+**Sign up for GitHub** 를 누르면 Step.2 로 이동되는데 지불관련 내용입니다. 일정 금액($7/월)을 지불하면 저장소를 비공개로 설정가능합니다.  
 마지막 스텝에서는 Github 사용계획 등의 정보를 입력받는 화면이니 적절히 선택하고 Submit을 누르면됩니다.  
-그럼 입력했던 이메일로 이메일주소 확인 링크가 포함된 메일이 발송되니 링크를 선택하여 최종 완료 단계를 마치게 됩니다.
+그럼 입력했던 이메일로 이메일주소 확인 링크가 포함된 메일이 발송됩니다. 링크를 선택하여 최종 완료 단계를 마치게 됩니다.
+
+## Github Repository 생성/삭제
+
+### 생성
+
+[Github](https://github.com/) 로그인 한 후 우측 중앙에 **New repository** 버튼을 누릅니다.  
+저장소명과 설명, 공개여부, 기본 README파일 생성 여부를 설정할 수 있습니다. 공개여부는 위 가입에서도 언급했지만 금액을 지불해야 비공개로 설정할 수 있습니다.
+
+### 삭제
+
+삭제하려는 repository로 이동합니다. 상단 탭 중 **Settings** 탭을 누른 후 이동되는 화면에서 제일 밑에 있는 **Delete this repository** 를 선택합니다.  
+입력란이 하나 나오는데 삭제 하려는 저장소명을 입력한 후 **I understand the consequences, delete this repository** 버튼을 선택하면 삭제됩니다.
 
 ## Github Repo 관리
 
-준비중..
+### 소스 업로드
 
-## 기타
+처음 업로드 할 경우 다음 순서를 따릅니다.
+
+ 1. 프롬프트 창에서 업로드할 프로젝트 폴더로 이동합니다. (바탕화면의 "컴퓨터" 같은 탐색기로 프로젝트 폴더로 이동한 후 [쉬프트] + [마우스 우클릭] 하여 "여기서 명령 창 열기" 를 선택해도 됩니다.)
+
+    c:\> cd "이동할 폴더 경로"
+
+    예)
+    cd c:\repo\github-guide
+
+ 2. 프롬프트 창에서 아래 코드를 입력하여 신규로 생성한 저장소와 연결시킵니다.
+
+    // git 연동을 위한 초기화
+    git init
+
+    // 사용자 정보 설정
+    git config --global user.name "<이름>"
+    git config --global user.email <이메일>
+
+    // github 원격 저장소 경로 등록
+    git remote add origin <URL>
+    예)
+    git remote add origin https://github.com/ks-choi/github
+
+ 3. 파일을 추가하고 업로드 합니다.
+
+    // Stage에 추가 (업로드 할 파일을 등록한다고 생각하면 됨)
+    git add <filename>
+    예 1) 특정파일: git add README.md
+    예 2) 전체파일: git add *
+
+    // Local에 추가
+    git commit -m "<메시지>"
+    예) git commit -m "first commit"
+
+    // Remote Repository에 업로드
+    git push origin global
+
+### Git CLI 정리
+
+    // 프로젝트를 처음 생성했을 때 초기화
+    git init
+
+    // 원격서버에서 파일 다운
+    git clone <URL>
+
+    // commit 하기 위한 파일 추가
+    git add <파일>
+
+    // local에 저장
+    git commit -m "<메시지>"
+
+    // 원격서버로 commit 내용 보냄
+    git push origin master
 
 ### .md(mark down)파일 마크업 관련
 
