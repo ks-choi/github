@@ -85,14 +85,41 @@ windows 기준으로 작성합니다.
     // 원격서버에서 파일 다운
     git clone <URL>
 
+    // 파일 상태 확인
+    git status
+
+    // 커밋 로그 확인
+    git log
+
     // commit 하기 위한 파일 추가
-    git add <파일>
+    git add <파일 또는 경로>
 
     // local에 저장
     git commit -m "<메시지>"
 
     // 원격서버로 commit 내용 보냄
     git push origin master
+
+    // local에서 복원
+    git checkout <파일 또는 경로>
+
+    // 파일 차이점 확인
+    git diff [HEAD] // (기본)최신 HEAD와 비교
+    git diff HEAD~2 // 2번째 전 HEAD와 비교
+    git diff <대상1> <대상2> // 대상1과 대상2 비교. 대상2가 더 최신이어야 함.
+
+    // 브랜치 생성
+    git branch [옵션] <브랜치명> // 옵션 : [-d:삭제]
+
+    // 브랜치 변경
+    git checkout <브랜치명> // 기본은 mater를 바라보고 있음. 브랜치 생성과 변경을 동시에 하고 싶다면 "git checkout -b <브랜치명>" 를 사용
+
+    // 브랜치 확인
+    git branch // 브랜치 목록이 나오며 현재 브랜치는 * 로 표기됨
+
+    // 브랜치 master에 적용(합치기)
+    git checkout master // 마스터로 이동
+    git merge <브랜치명> // master와 브랜치 합침
 
 ### .md(mark down)파일 마크업 관련
 
