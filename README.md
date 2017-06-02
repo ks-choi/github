@@ -130,9 +130,3 @@ windows 기준으로 작성합니다.
 
  1. [git-scm](https://git-scm.com/book/ko/v2) : Git 관련 전체 설명
 
-
-
-| 1 | 사용 안 함|
-|---|------------|
-| 2 | SMS(12원)|
-| 3 | LMS(30원)|
